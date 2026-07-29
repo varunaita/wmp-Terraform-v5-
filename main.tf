@@ -1,8 +1,8 @@
 module "network" {
     source = "./Modules/network"
     
-for_each = var.COMPONENT
-COMPONENT = each.key
+for_each = var.components
+component = each.key
 env = "dev"
 
 
